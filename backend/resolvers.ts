@@ -73,6 +73,8 @@ export const resolvers: Resolvers<ApolloContext> = {
 			const columns: string[] = [];
 			const sqlParams: any[] = [];
 
+			// throw new Error("HEYAAA");
+
 			if (args.input.title) {
 				columns.push("title = ?");
 				sqlParams.push(args.input.title);
