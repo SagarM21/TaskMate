@@ -1,5 +1,6 @@
-query Tasks {
-	tasks {
+# Write your query or mutation here
+query Tasks($status: TaskStatus) {
+	tasks(status: $status) {
 		id
 		title
 		status
